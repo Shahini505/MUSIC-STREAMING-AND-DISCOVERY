@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("HTML BG PRJ.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Kannada songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#SALAAM ROCKY BHAI<br>
+  <audio controls>
+        <source src="Dheera-Dheera-Sachin-Basrur-Ananya-Bhat-Mohana-Krishna-Vijay-Urs-H.-Shreenivas-Moorthi-Puneeth-Rudranag-Santhosh.mp3" type="audio/mpeg" >
+      </audio><br>
+      #GARBADHI<br>
+      <audio controls>  
+        <source src="Garbadhi-Ananya-Bhat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #SIDILA BHARAVA<br>
+      <audio controls>
+        <source src="Malainaatile.mp3" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #JAALEBA<br>
+      <audio controls>
+        <source src="Maavilai Maavilai Thoranaga.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #AMMI AMMI<br>
+      <audio controls>
+        <source src="Quit Pannuda - SenSongsMp3.Co.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #YENAMMI<br>
+      <audio controls>
+        <source src="Vandhanam Vandhanam.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #BELAKINA<br>
+      <audio controls>
+        <source src="Celebration of Varisu.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #MATTE NODABIDA<br>
+      <audio controls>
+        <source src="Malainaatile.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #ANISUTHIDE<br>
+      <audio controls>
+        <source src="Sidila-Bharava-Sachin-Basrur-Mohana-Krishna-H.-Shreenivas-Moorthi-Vijay-Urs-Santhosh-Ananya-Bhat-Puneeth-Rudranag.mp3.crdownload" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #MAMMU MAMMU<br>
+      <audio controls>
+        <source src="Salaam-Rocky-Bhai-Vijay-Prakash-Santhosh-Sachin-Puneeth-Rajkumar-Mohan-Krishna-H.-Srinivas-Vijay-Urs.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

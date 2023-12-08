@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("1.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Punjabi songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#LADEN<br>
+  <audio controls>
+        <source src="laden.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #ZAMIDAAR<br>
+      <audio controls>  
+        <source src="zamidaar.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #SUPERSTAR<br>
+      <audio controls>
+        <source src="superstar.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #BLUE EYES<br>
+      <audio controls>
+        <source src="blue eyes.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #PARTY GETTI'N HOT<br>
+      <audio controls>
+        <source src="party getting hot.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #BANDA BAN JA<br>
+      <audio controls>
+        <source src="banda ban ja ).mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #ATT KARTI<br>
+      <audio controls>
+        <source src="att karti.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #NIKLE CURRENT<br>
+      <audio controls>
+        <source src="nikle current.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #NA NA NA<br>
+      <audio controls>
+        <source src="na na na.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #HULARA<br>
+      <audio controls>
+        <source src="hulara.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

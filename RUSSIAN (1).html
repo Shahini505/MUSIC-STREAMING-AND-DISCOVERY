@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("HTML BG PRJ.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Russian songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#PARTY<br>
+  <audio controls>
+        <source src="John_Bartmann_-_11_-_Iyanetha(chosic.com).mp3" type="audio/mpeg" >
+      </audio><br>
+      #FOLK-METELIZA<br>
+      <audio controls>  
+        <source src="John_Bartmann_-_11_-_Iyanetha(chosic.com) (1).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #ROULETEE<br>
+      <audio controls>
+        <source src="John_Bartmann_-_02_-_Happy_African_Village(chosic.com).mp3.crdownload" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #FOLK-VO-KUZNITSE<br>
+      <audio controls>
+        <source src="WhatsApp Audio 2023-12-01 at 5.53.46 PM (1).mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #SADLY<br>
+      <audio controls>
+        <source src="WhatsApp Audio 2023-12-01 at 5.53.48 PM (3).mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #SWAN-LAKE<br>
+      <audio controls>
+        <source src="WhatsApp Audio 2023-12-01 at 5.53.48 PM (4).mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #HOLIDAY<br>
+      <audio controls>
+        <source src="turkish-beat-15167.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #CLOWNS<br>
+      <audio controls>
+        <source src="WhatsApp Audio 2023-12-01 at 3.32.31 PM (1).mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #FALL IN LOVE<br>
+      <audio controls>
+        <source src="WhatsApp Audio 2023-12-01 at 5.53.47 PM (1).mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #HONOR<br>
+      <audio controls>
+        <source src="Memories-of-Spring(chosic.com).mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

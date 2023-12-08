@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("HTML BG PRJ.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Tamil songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#THEE THALAPATHY<br>
+  <audio controls>
+        <source src="Thee Thalapathy.mp3" type="audio/mpeg" >
+      </audio><br>
+      #RANJITHAME<br>
+      <audio controls>  
+        <source src="Ranjithame.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #JIMIKKI PONU<br>
+      <audio controls>
+        <source src="Jimikki Ponnu.mp3" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #VAA THALAIVA<br>
+      <audio controls>
+        <source src="Vaa Thalaivaa (1).mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #VAATHI COMMING<br>
+      <audio controls>
+        <source src="Vaa Vaathi.mp3"type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #QUIT PANNUDA<br>
+      <audio controls>
+        <source src="Quit Pannuda - SenSongsMp3.Co.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #MASTER THE BLASTER<br>
+      <audio controls>
+        <source src="Master the Blaster - SenSongsMp3.Com.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #VAA VATHI<br>
+      <audio controls>
+        <source src="Vaa Vaathi.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #RATATA<br>
+      <audio controls>
+        <source src="Ratata.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #NAA READY<br>
+      <audio controls>
+        <source src="Naa Ready.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

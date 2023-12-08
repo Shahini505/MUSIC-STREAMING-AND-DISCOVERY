@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("1.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Bengali songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#Mon amar tori<br>
+  <audio controls>
+        <source src="mon amar tori.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #Sarthopor<br>
+      <audio controls>  
+        <source src="sarthopor.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Ei desh amar<br>
+      <audio controls>
+        <source src="ei desh amar.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #Ashbo phire nilayan<br>
+      <audio controls>
+        <source src="Ashbo phire nilayan.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Bogla mama<br>
+      <audio controls>
+        <source src="Bogla mama.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Ekotar gaan<br>
+      <audio controls>
+        <source src="Ekotar gaan.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Prince of mine<br>
+      <audio controls>
+        <source src="Prince of mine.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Amra morbo jogot<br>
+      <audio controls>
+        <source src="Amra morbo jogot.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Maa thakbe<br>
+      <audio controls>
+        <source src="Maa thakbe.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Abar hobe to<br>
+      <audio controls>
+        <source src="Abar hobe to.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("WhatsApp Image 2023-11-29 at 7.23.45 PM.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: magenta;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Malyalam songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#Parayuvaan<br>
+  <audio controls>
+        <source src="parayuvaan.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #Kannil<br>
+      <audio controls>  
+        <source src="kannil kannil.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Aaraadhike<br>
+      <audio controls>
+        <source src="Aaraadhike.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #Madhu pole<br>
+      <audio controls>
+        <source src="madhu pole.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Uyiril thodum<br>
+      <audio controls>
+        <source src="uyiril thodum.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Neeyila neeram<br>
+      <audio controls>
+        <source src="neeyila neeram.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Uyire<br>
+      <audio controls>
+        <source src="uyire.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Rithuagam<br>
+      <audio controls>
+        <source src="rithuagam.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Pavizha mazha<br>
+      <audio controls>
+        <source src="pavizha mazha.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Jupiter mazha<br>
+      <audio controls>
+        <source src="jupiter mazha.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

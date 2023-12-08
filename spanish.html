@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("2.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Spanish songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#Mi gente<br>
+  <audio controls>
+        <source src="Mi gente.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #Bella ciao<br>
+      <audio controls>  
+        <source src="Bella ciao.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Echame la culpa<br>
+      <audio controls>
+        <source src="Echame la culpa.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #Con calma<br>
+      <audio controls>
+        <source src="Con calma.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Danza kuduro<br>
+      <audio controls>
+        <source src="Danza kuduro.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Loco contigo<br>
+      <audio controls>
+        <source src="Loco contigo.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Dura<br>
+      <audio controls>
+        <source src="Dura.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Dame tu cosita<br>
+      <audio controls>
+        <source src="Dame tu cosita.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Damelo to<br>
+      <audio controls>
+        <source src="Damelo to.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Taki Taki<br>
+      <audio controls>
+        <source src="Taki Taki.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

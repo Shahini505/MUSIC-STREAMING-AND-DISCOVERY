@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("1.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Africa songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#SALAAM ROCKY BHAI<br>
+  <audio controls>
+        <source src="C:\Users\rayal\Downloads\John_Bartmann_-_11_-_Iyanetha(chosic.com) (1).mp3.crdownload" type="audio/mpeg" >
+      </audio><br>
+      #GARBADHI<br>
+      <audio controls>  
+        <source src="C:\Users\rayal\Downloads\hayden-folker-mirage(chosic.com).mp3.crdownload" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #SIDILA BHARAVA<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\John_Bartmann_-_02_-_Happy_African_Village(chosic.com).mp3.crdownload" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #JAALEBA<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\Luke-Bergs-Shivamp3(chosic.com).mp3.crdownload" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #AMMI AMMI<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\Epic-Chase(chosic.com) (1).mp3.crdownload" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #YENAMMI<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\Epic-Chase(chosic.com).mp3.crdownload" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #BELAKINA<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\John_Bartmann_-_07_-_African_Moon(chosic.com).mp3.crdownload" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #MATTE NODABIDA<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\Breuss_Arrizabalaga_Quintet_-_07_-_Nfamoudou-Boudougou(chosic.com).mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #ANISUTHIDE<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\John_Bartmann_-_11_-_Iyanetha(chosic.com) (1).mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #MAMMU MAMMU<br>
+      <audio controls>
+        <source src="C:\Users\rayal\Downloads\Morning-Station(chosic.com).mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

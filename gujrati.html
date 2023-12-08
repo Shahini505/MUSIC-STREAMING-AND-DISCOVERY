@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("2.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Gujrati songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#Khalasi<br>
+  <audio controls>
+        <source src="Khalasi.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #Maru dil vat jove<br>
+      <audio controls>  
+        <source src="Maru dil vat jove.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Chandaliyo ugyo<br>
+      <audio controls>
+        <source src="Chandaliyo ugyo.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #Vidhata na lekh mathur ka<br>
+      <audio controls>
+        <source src="Vidhata na lekh mathur ka.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Vahal na dariyo<br>
+      <audio controls>
+        <source src="Vahal na dariyo.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Maa taro Garbo<br>
+      <audio controls>
+        <source src="Maa taro Garbo.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Channu re<br>
+      <audio controls>
+        <source src="Channu re.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Gori tame manda lidha<br>
+      <audio controls>
+        <source src="Gori tame manda lidha.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Jivi le jindagi<br>
+      <audio controls>
+        <source src="Jivi le jindagi.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Jannat<br>
+      <audio controls>
+        <source src="Jannat.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

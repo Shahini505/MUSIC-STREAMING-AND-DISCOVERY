@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("1.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Garhwali songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#Fwa bagha re<br>
+  <audio controls>
+        <source src="fwa bagha re.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #Bol heera<br>
+      <audio controls>  
+        <source src="bo heera.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Chaita ki Chaitwal<br>
+      <audio controls>
+        <source src="chaita ki chaitwal.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #Sun Ja Baat Meri Haan<br>
+      <audio controls>
+        <source src="sun ja baat meri haa.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Rum Jumma<br>
+      <audio controls>
+        <source src="rum juuma.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Meri Gajana<br>
+      <audio controls>
+        <source src="meri gajana.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Surma Sareli<br>
+      <audio controls>
+        <source src="surma sareli.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Sutra Ki Dori<br>
+      <audio controls>
+        <source src="sutra ki dori.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Thal ki Bazar<br>
+      <audio controls>
+        <source src="thal ki bazar.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Geet Lana Tandi<br>
+      <audio controls>
+        <source src="geet lana tandi.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>

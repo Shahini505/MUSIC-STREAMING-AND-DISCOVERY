@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html, body {
+         height: 100%;
+         margin: 0;
+}
+
+    body {
+  /* The image used */
+  background-image: url("1.jpeg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bolder;
+}
+p{
+    color:blueviolet;
+    font-weight: bolder;
+    font-size: 50px;
+}
+div{
+  background-color: black;
+  height: 60px;
+}
+    </style>
+</head>
+
+<body>
+  <div>
+    <center><p>Explore Trending songs</p></center></div>
+    <br>
+    <br>
+    <br>
+    <br>#Arjan Velly<br>
+  <audio controls>
+        <source src="arjan velly.mpeg" type="audio/mpeg" >
+      </audio><br>
+      #Desi Balak<br>
+      <audio controls>  
+        <source src="desi balak.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Gulabi sharara<br>
+      <audio controls>
+        <source src="gulabi sharara.mpeg" type="audio/mp3" >
+        Your browser does not support the audio element.
+      </audio><br>
+      #Kalaastar<br>
+      <audio controls>
+        <source src="kalaastar.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Deva Deva<br>
+      <audio controls>
+        <source src="Deva Deva.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Hass Hass<br>
+      <audio controls>
+        <source src="Hass Hass.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Chaleya<br>
+      <audio controls>
+        <source src="chaleya.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Ramiya Vastavaiya<br>
+      <audio controls>
+        <source src="Ramiya Vastavaiya.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Le ke Prabhu ka Naam<br>
+      <audio controls>
+        <source src="le ke prabhu ka naam.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio><br>
+      #Jhoome jo pathaan<br>
+      <audio controls>
+        <source src="Jhoome jo pathaan.mpeg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const audios = document.querySelectorAll('audio');
+        audios.forEach(audio => {
+          audio.addEventListener('play', () => {
+            audios.forEach(otherAudio => {
+              if (otherAudio !== audio) {
+                otherAudio.pause();
+              }
+            });
+          });
+        });
+      </script>
+</body>
+</html>
